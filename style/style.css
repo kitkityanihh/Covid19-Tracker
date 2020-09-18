@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+* {
+  margin: 0;
+  overflow: inherit;
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: default;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.hero-text {
+  font-family: "Fredoka One", cursive;
+  text-decoration: none;
+  cursor: default;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: rgb(36, 248, 89);
+  text-decoration: none;
+}
+
+iframe {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* wave */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  font-family: Lato, sans-serif;
+  --col-deepblue: #44e367;
+}
+footer {
+  width: 100vw;
+  bottom: 0px;
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+}
+svg {
+  width: 100%;
+  overflow: visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count: infinite;
+  fill: #44e359;
+}
+.drop {
+  fill: var(--col-deepblue);
+  fill: #44e359;
+  animation: drop 3.2s linear infinite normal;
+  stroke: var(--col-deepblue);
+  stroke-width: 0.5;
+  transform: translateY(25px);
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.drop2 {
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration: 3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration: 3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration: 3.2s;
+}
+.gooeff {
+  filter: url(#goo);
+}
+#wave2 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+  opacity: 0.6;
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity: 0.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px);
+  }
+  30% {
+    transform: translateY(-10px) scale(0.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1);
+  }
+  70% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px) scale(0.1);
+  }
+}
+@keyframes wave {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* header */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+body {
+  margin: 0;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.headings {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  color: #333333;
+  font-size: 48px;
+  text-align: center;
+}
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgb(17, 197, 41) 0%,
+    rgb(95, 240, 126) 100%
+  );
+  color: rgb(0, 0, 0);
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 80vh;
+  text-align: center;
+  background-color: white;
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #44e367;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  align-content: center;
+}
